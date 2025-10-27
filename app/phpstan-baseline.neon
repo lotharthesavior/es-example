@@ -1,0 +1,592 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Aggregates\\AppInstanceAggregate\:\:initializeApp\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Aggregates/AppInstanceAggregate.php
+
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Aggregates\\AppInstanceAggregate\:\:setProfile\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Aggregates/AppInstanceAggregate.php
+
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Projections\\AppInstance\:\:bootHasUuid\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Projections/AppInstance.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\AppInstance\\Projections\\AppInstance\:\:\$profile_uuid\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/AppInstance/Projectors/AppInstanceProjector.php
+
+		-
+			message: '#^Call to an undefined static method App\\Domains\\AppInstance\\Projectors\\AppInstanceProjector\:\:creating\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Domains/AppInstance/Projectors/AppInstanceProjector.php
+
+		-
+			message: '#^Call to an undefined static method App\\Domains\\AppInstance\\Projectors\\AppInstanceProjector\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Domains/AppInstance/Projectors/AppInstanceProjector.php
+
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Projectors\\AppInstanceProjector\:\:bootHasUuid\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Projectors/AppInstanceProjector.php
+
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Projectors\\AppInstanceProjector\:\:onAppInstanceInitialized\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Projectors/AppInstanceProjector.php
+
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Projectors\\AppInstanceProjector\:\:onProfileSet\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Projectors/AppInstanceProjector.php
+
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Projectors\\AppInstanceProjector\:\:onStartingEventReplay\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Projectors/AppInstanceProjector.php
+
+		-
+			message: '#^Method App\\Domains\\AppInstance\\Reactors\\WelcomeUser\:\:onEventHappened\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/AppInstance/Reactors/WelcomeUser.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Aggregates\\HealthProfileAggregate\:\:recordMetric\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/HealthProfile/Aggregates/HealthProfileAggregate.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Aggregates\\HealthProfileAggregate\:\:recordMetric\(\) has parameter \$value with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Aggregates/HealthProfileAggregate.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Aggregates\\HealthProfileAggregate\:\:useState\(\) has parameter \$state with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Aggregates/HealthProfileAggregate.php
+
+		-
+			message: '#^Property App\\Domains\\HealthProfile\\Aggregates\\HealthProfileAggregate\:\:\$value type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Aggregates/HealthProfileAggregate.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between mixed and null will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 1
+			path: app/Domains/HealthProfile/Aggregates/HealthProfileAggregate.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Events\\MetricRecorded\:\:__construct\(\) has parameter \$value with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Events/MetricRecorded.php
+
+		-
+			message: '#^Generic type Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Domains\\Profile\\Projections\\Profile\> in PHPDoc tag @return does not specify all template types of class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\: TRelatedModel, TDeclaringModel$#'
+			identifier: generics.lessTypes
+			count: 1
+			path: app/Domains/HealthProfile/Projections/Metric.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Projections\\Metric\:\:bootHasUuid\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/HealthProfile/Projections/Metric.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Projections\\Metric\:\:profile\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Domains\\Profile\\Projections\\Profile\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Domains\\Profile\\Projections\\Profile, \$this\(App\\Domains\\HealthProfile\\Projections\\Metric\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Domains/HealthProfile/Projections/Metric.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$notes\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$photo_url\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$profile_uuid\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$timestamp\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$value\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Projectors\\HealthMetricsProjector\:\:onMetricDeleted\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Projectors\\HealthMetricsProjector\:\:onMetricRecorded\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Projectors\\HealthMetricsProjector\:\:onStartingEventReplay\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/HealthProfile/Projectors/HealthMetricsProjector.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$valueKey \(string\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Invalid array key type App\\Enums\\MetricType\.$#'
+			identifier: array.invalidKey
+			count: 2
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:betweenTimestamps\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:first\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:forMetrics\(\) has parameter \$metricUuids with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:get\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:groupByType\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:groupByType\(\) should return Illuminate\\Support\\Collection\<App\\Enums\\MetricType, Illuminate\\Support\\Collection\> but returns Illuminate\\Support\\Collection\<\(int\|string\), Illuminate\\Support\\Collection\<int, mixed\>\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:latestByType\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:latestByType\(\) should return Illuminate\\Support\\Collection\<App\\Enums\\MetricType, array\> but returns Illuminate\\Support\\Collection\<\(int\|string\), mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:queryStoredEvents\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:replayEvents\(\) has parameter \$events with generic class Illuminate\\Support\\Collection but does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:replayEvents\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Property App\\Domains\\HealthProfile\\Queries\\PointInTimeMetricsQuery\:\:\$metricUuids type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Type App\\Enums\\MetricType in generic type Illuminate\\Support\\Collection\<App\\Enums\\MetricType, Illuminate\\Support\\Collection\> in PHPDoc tag @return is not subtype of template type TKey of \(int\|string\) of class Illuminate\\Support\\Collection\.$#'
+			identifier: generics.notSubtype
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Type App\\Enums\\MetricType in generic type Illuminate\\Support\\Collection\<App\\Enums\\MetricType, array\> in PHPDoc tag @return is not subtype of template type TKey of \(int\|string\) of class Illuminate\\Support\\Collection\.$#'
+			identifier: generics.notSubtype
+			count: 1
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Unable to resolve the template type TGroupKey in call to method Illuminate\\Support\\Collection\<\(int\|string\),mixed\>\:\:groupBy\(\)$#'
+			identifier: argument.templateType
+			count: 2
+			path: app/Domains/HealthProfile/Queries/PointInTimeMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\TimeMachineMetricsQuery\:\:forMetrics\(\) has parameter \$metricUuids with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Queries/TimeMachineMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\TimeMachineMetricsQuery\:\:get\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/TimeMachineMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\TimeMachineMetricsQuery\:\:queryStoredEvents\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/TimeMachineMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\TimeMachineMetricsQuery\:\:replayEvents\(\) has parameter \$events with generic class Illuminate\\Support\\Collection but does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/TimeMachineMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Queries\\TimeMachineMetricsQuery\:\:replayEvents\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domains/HealthProfile/Queries/TimeMachineMetricsQuery.php
+
+		-
+			message: '#^Property App\\Domains\\HealthProfile\\Queries\\TimeMachineMetricsQuery\:\:\$metricUuids type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/HealthProfile/Queries/TimeMachineMetricsQuery.php
+
+		-
+			message: '#^Method App\\Domains\\HealthProfile\\Reactors\\DangerousHeartRate\:\:onMetricRecorded\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/HealthProfile/Reactors/DangerousHeartRate.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between int and null will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: app/Domains/HealthProfile/Reactors/DangerousHeartRate.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Aggregates\\ProfileAggregate\:\:getState\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/Profile/Aggregates/ProfileAggregate.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Aggregates\\ProfileAggregate\:\:useState\(\) has parameter \$state with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domains/Profile/Aggregates/ProfileAggregate.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between mixed and null will always evaluate to true\.$#'
+			identifier: notIdentical.alwaysTrue
+			count: 3
+			path: app/Domains/Profile/Aggregates/ProfileAggregate.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projections\\Profile\:\:bootHasUuid\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projections/Profile.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projections\\Profile\:\:metrics\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projections/Profile.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projections\\Profile\:\:user\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projections/Profile.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\Profile\\Projections\\Profile\:\:\$last_metric_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileHealthMetricProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\Profile\\Projections\\Profile\:\:\$last_metric_type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileHealthMetricProjector.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projectors\\ProfileHealthMetricProjector\:\:onMetricRecorded\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileHealthMetricProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\Profile\\Projections\\Profile\:\:\$deleted_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\Profile\\Projections\\Profile\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\Profile\\Projections\\Profile\:\:\$role\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\Profile\\Projections\\Profile\:\:\$updated_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projectors\\ProfileProjector\:\:onProfileCreated\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projectors\\ProfileProjector\:\:onProfileDeleted\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projectors\\ProfileProjector\:\:onProfileUpdated\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Projectors\\ProfileProjector\:\:onStartingEventReplay\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Projectors/ProfileProjector.php
+
+		-
+			message: '#^Method App\\Domains\\Profile\\Reactors\\LogProfileData\:\:onEventHappened\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domains/Profile/Reactors/LogProfileData.php
+
+		-
+			message: '#^Method App\\Enums\\MetricType\:\:metricTypeRule\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Enums/MetricType.php
+
+		-
+			message: '#^Method App\\Enums\\MetricType\:\:values\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Enums/MetricType.php
+
+		-
+			message: '''
+				#^PHPDoc tag @return has invalid value \(array\{
+				    'value\-rules'\: array\{
+				        'required',
+				        'array',
+				        \\Closure,
+				    \}
+				    'sub\-rules'\: string,
+				\}\)\: Unexpected token "'sub\-rules'", expected '\}' at offset 196 on line 9$#
+			'''
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Enums/MetricType.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Helpers/Helpers.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\HealthProfile\\Projections\\Metric\:\:\$value\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Helpers/Helpers.php
+
+		-
+			message: '#^Match arm comparison between App\\Enums\\MetricType\:\:TEMPERATURE and App\\Enums\\MetricType\:\:TEMPERATURE is always true\.$#'
+			identifier: match.alwaysTrue
+			count: 1
+			path: app/Helpers/Helpers.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\AuthController\:\:logout\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HealthProfileController\:\:createMedicationForm\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HealthProfileController\:\:createMedicationLogForm\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HealthProfileController\:\:createReportForm\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HealthProfileController\:\:exportReportCsv\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HealthProfileController\:\:generateReport\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HealthProfileController\:\:logMedication\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HealthProfileController\:\:scheduleMedication\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 2
+			path: app/Http/Controllers/HealthProfileController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HomeController\:\:index\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Controllers/HomeController.php
+
+		-
+			message: '#^Access to an undefined property App\\Domains\\AppInstance\\Projections\\AppInstance\:\:\$profile_uuid\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Middleware/ProfileMiddleware.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\LogMedicationRequest\:\:authorize\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Requests/LogMedicationRequest.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\LogMedicationRequest\:\:rules\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Requests/LogMedicationRequest.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\StoreMedicationRequest\:\:authorize\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Requests/StoreMedicationRequest.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\StoreMedicationRequest\:\:rules\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Requests/StoreMedicationRequest.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\StoreMetricRequest\:\:authorize\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Requests/StoreMetricRequest.php
+
+		-
+			message: '#^Method App\\Http\\Requests\\StoreMetricRequest\:\:rules\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Http/Requests/StoreMetricRequest.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>uuid" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Requests/StoreMetricRequest.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:profiles\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Models/User.php
