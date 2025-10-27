@@ -113,7 +113,7 @@ Health Metric registration
 
 The Event Sourcing Flow
 
-![[imgs/slide-16.png|550]]
+![[imgs/slide-16.png]]
 
 ---
 
